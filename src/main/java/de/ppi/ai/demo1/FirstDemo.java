@@ -1,4 +1,4 @@
-package de.ppi.first_spring_ai.demo1;
+package de.ppi.ai.demo1;
 
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package de.ppi.first_spring_ai.config;
+package de.ppi.ai.config;
 
 import org.springframework.ai.azure.openai.AzureOpenAiChatModel;
 import org.springframework.ai.azure.openai.AzureOpenAiChatOptions;

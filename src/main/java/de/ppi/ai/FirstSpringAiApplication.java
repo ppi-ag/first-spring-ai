@@ -1,4 +1,4 @@
-package de.ppi.first_spring_ai;
+package de.ppi.ai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
