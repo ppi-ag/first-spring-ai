@@ -1,7 +1,6 @@
 package de.ppi.ai.demo1;
 
 import org.springframework.ai.chat.client.ChatClient;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
@@ -9,13 +8,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class FirstDemo {
 
-    @Autowired
-    private ChatClient chatClient4oMini;
+    private final ChatClient chatClient;
+
+    public FirstDemo(ChatClient.Builder chatClientBuilder) {
+        this.chatClient = chatClientBuilder.build();
+    }
+
 
     @Bean
-	public CommandLineRunner runner(ChatClient.Builder builder) {
+	public CommandLineRunner runner() {
 		return args -> {
-			String response = chatClient4oMini.prompt("Tell me a joke").call().content();							
+			String response = chatClient.prompt("Tell me a joke").call().content();							
 			System.out.println(response);
 		};
 	}
