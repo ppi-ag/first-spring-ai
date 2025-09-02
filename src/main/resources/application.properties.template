@@ -2,3 +2,4 @@ spring.application.name=first-spring-ai
 
 spring.ai.azure.openai.api-key=<api-key>
 spring.ai.azure.openai.endpoint=<endpoint>
+spring.ai.azure.openai.chat.options.deployment-name=<deployment-name>
