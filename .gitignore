@@ -60,3 +60,5 @@ ehthumbs.db
 
 # Spring Boot
 *.pid
+
+src/main/resources/application.properties
