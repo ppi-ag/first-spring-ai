@@ -62,3 +62,4 @@ ehthumbs.db
 *.pid
 
 src/main/resources/application.properties
+CLAUDE.md
