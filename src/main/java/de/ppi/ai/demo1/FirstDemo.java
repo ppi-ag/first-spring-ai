@@ -3,9 +3,8 @@ package de.ppi.ai.demo1;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
 
-@Component
+// @Component
 public class FirstDemo {
 
     private final ChatClient chatClient;
